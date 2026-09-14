@@ -64,16 +64,16 @@ export default function Loginforme() {
           <form onSubmit={handelSupmit} className="login-form">
             <div className="login-field">
               <label className="form-label" htmlFor="loginName">
-                Your name
+                Email address
               </label>
               <div className="login-input-wrap">
-                <i className="bi bi-person" aria-hidden="true" />
+                <i className="bi bi-envelope" aria-hidden="true" />
                 <input
                   className="form-control login-input"
                   id="email"
                   name="email"
                   type="email"
-                  placeholder="Alex Morgan"
+                  placeholder="you@example.com"
                   autoComplete="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}

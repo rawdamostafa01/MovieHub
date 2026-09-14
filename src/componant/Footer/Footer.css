@@ -1,0 +1,126 @@
+.movi-footer {
+  padding: 4.5rem 0 1.5rem;
+  background: #101418;
+  color: #f8f9fa;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.movi-footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: #ffc107;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.movi-footer-brand:hover {
+  color: #ffca2c;
+}
+
+.movi-footer-description {
+  max-width: 320px;
+  margin: 1rem 0 1.5rem;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.7;
+}
+
+.movi-footer-socials {
+  display: flex;
+  gap: 0.65rem;
+}
+
+.movi-footer-socials a {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.72);
+  text-decoration: none;
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.movi-footer-socials a:hover {
+  border-color: #ffc107;
+  color: #ffc107;
+  transform: translateY(-2px);
+}
+
+.movi-footer-title {
+  margin: 0 0 1.1rem;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.movi-footer-links {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.movi-footer-links li {
+  margin-bottom: 0.7rem;
+}
+
+.movi-footer-links a,
+.movi-footer-legal a {
+  color: rgba(255, 255, 255, 0.62);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.movi-footer-links a:hover,
+.movi-footer-legal a:hover {
+  color: #ffc107;
+}
+
+.movi-footer-note {
+  max-width: 190px;
+  margin: 0 0 1.1rem;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.6;
+}
+
+.movi-footer-button {
+  color: #171d23;
+  font-weight: 700;
+}
+
+.movi-footer-button i {
+  margin-left: 0.4rem;
+}
+
+.movi-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 4rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.8rem;
+}
+
+.movi-footer-legal {
+  display: flex;
+  gap: 1.25rem;
+}
+
+@media (max-width: 575.98px) {
+  .movi-footer {
+    padding-top: 3rem;
+  }
+
+  .movi-footer-bottom {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+}

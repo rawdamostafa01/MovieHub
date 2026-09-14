@@ -1,0 +1,90 @@
+.movi-loading {
+  min-height: calc(100vh - 72px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  background: #101418;
+  color: #f8f9fa;
+}
+
+.movi-loading::before,
+.movi-loading::after {
+  content: "";
+  position: absolute;
+  width: 24rem;
+  height: 24rem;
+  border: 1px solid rgba(255, 193, 7, 0.12);
+  border-radius: 50%;
+}
+
+.movi-loading::before {
+  top: -13rem;
+  left: -7rem;
+  box-shadow: 0 0 0 3rem rgba(255, 193, 7, 0.025), 0 0 0 6rem rgba(255, 193, 7, 0.018);
+}
+
+.movi-loading::after {
+  right: -12rem;
+  bottom: -14rem;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.movi-loading-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.movi-loading-mark {
+  width: 82px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  border: 1px solid rgba(255, 193, 7, 0.55);
+  border-radius: 50%;
+  color: #ffc107;
+  font-size: 2.25rem;
+  box-shadow: 0 0 0 10px rgba(255, 193, 7, 0.04), 0 0 2.5rem rgba(255, 193, 7, 0.12);
+  animation: movi-pulse 1.8s ease-in-out infinite;
+}
+
+.movi-loading-content h1 {
+  margin: 0 0 1.5rem;
+  color: #ffc107;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.movi-loading-content .spinner-border {
+  width: 2rem;
+  height: 2rem;
+  border-width: 0.18em;
+}
+
+.movi-loading-content p {
+  margin: 1rem 0 0;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+}
+
+@keyframes movi-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(255, 193, 7, 0.04), 0 0 2.5rem rgba(255, 193, 7, 0.12);
+  }
+
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 16px rgba(255, 193, 7, 0.02), 0 0 3.5rem rgba(255, 193, 7, 0.2);
+  }
+}

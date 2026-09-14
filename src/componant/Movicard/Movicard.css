@@ -1,0 +1,133 @@
+.movie-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  background: #1b2229;
+  box-shadow: 0 0.75rem 1.75rem rgba(0, 0, 0, 0.25);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 193, 7, 0.35);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.38);
+}
+
+.movie-card-poster-wrap {
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  position: relative;
+  background: #252e36;
+}
+
+.movie-card-poster-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 45% 0 0;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(16, 20, 24, 0),
+    rgba(16, 20, 24, 0.52)
+  );
+}
+
+.movie-card-poster {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.movie-card:hover .movie-card-poster {
+  transform: scale(1.04);
+}
+
+.movie-card-score,
+.movie-card-bookmark {
+  position: absolute;
+  top: 0.8rem;
+  background: rgba(16, 20, 24, 0.82);
+  color: #ffffff;
+}
+
+.movie-card-score {
+  left: 0.8rem;
+  padding: 0.35rem 0.55rem;
+  border-radius: 5px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.movie-card-score i {
+  margin-right: 0.25rem;
+  color: #ffc107;
+}
+
+.movie-card-bookmark {
+  right: 0.8rem;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 50%;
+}
+
+.movie-card-bookmark:hover,
+.movie-card-bookmark:focus {
+  background: #ffc107;
+  color: #171d23;
+}
+
+.movie-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.1rem;
+  background: #1b2229;
+}
+
+.movie-card-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #9ba6af;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.movie-card-content h2 {
+  margin: 0.5rem 0;
+  color: #ffffff;
+  font-size: 1.35rem;
+}
+
+.movie-card-content p {
+  display: -webkit-box;
+  min-height: 48px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 0.85rem;
+  line-height: 1.55;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.movie-card-button {
+  width: 100%;
+  margin-top: auto;
+  color: #171d23;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.movie-card-button i {
+  margin-left: 0.4rem;
+}

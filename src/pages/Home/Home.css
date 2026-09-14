@@ -1,0 +1,54 @@
+.section {
+  min-height: calc(100vh - 72px);
+  position: relative;
+  overflow: hidden;
+  background: #101418;
+  color: #f8f9fa;
+}
+
+.section::before,
+.section::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.section::before {
+  width: 32rem;
+  height: 32rem;
+  top: -16rem;
+  right: -8rem;
+  border: 1px solid rgba(255, 193, 7, 0.14);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3rem rgba(255, 193, 7, 0.025),
+    0 0 0 6rem rgba(255, 193, 7, 0.018);
+}
+
+.section::after {
+  width: 24rem;
+  height: 24rem;
+  bottom: -15rem;
+  left: -9rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+}
+
+.section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.section .row {
+  row-gap: 1.5rem !important;
+}
+
+.section .movie-card {
+  height: 100%;
+}
+
+@media (max-width: 575.98px) {
+  .section .container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}

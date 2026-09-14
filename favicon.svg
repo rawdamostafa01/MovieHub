@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MovieHub cinema icon">
+	<rect width="64" height="64" rx="14" fill="#101827"/>
+	<path fill="#f5b544" d="M15 13h34a5 5 0 0 1 5 5v28a5 5 0 0 1-5 5H15a5 5 0 0 1-5-5V18a5 5 0 0 1 5-5Z"/>
+	<path fill="#e35d3f" d="M14 13h10l-6 8h-9v-3a5 5 0 0 1 5-5Zm16 0h10l-6 8H24l6-8Zm16 0h3a5 5 0 0 1 5 5v3H40l6-8Z"/>
+	<path fill="#fff7e6" d="M19 27h26v4H19zm0 8h26v4H19z"/>
+	<path fill="#101827" d="M27 43h10l-5-7-5 7Z"/>
+	<circle cx="16" cy="17" r="2" fill="#101827"/>
+	<circle cx="48" cy="17" r="2" fill="#101827"/>
+</svg>

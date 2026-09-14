@@ -26,7 +26,14 @@ export default function Home() {
       {trandingMovies !== null ? (
         <div className="section">
           <div className="container">
-            <div className="row g-2 py-5">
+            <div className="home-hero">
+              <p className="home-kicker">Popular this week</p>
+              <h1 className="home-title">Trending Movies</h1>
+              <p className="home-description">
+                Discover the latest and most loved movies from around the world.
+              </p>
+            </div>
+            <div className="row g-2 py-4">
               {trandingMovies.map((movie) => (
                 <Movicard datamovie={movie} key={movie.id} />
               ))}

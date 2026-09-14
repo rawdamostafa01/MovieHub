@@ -2,7 +2,7 @@
   min-height: calc(100vh - 72px);
   position: relative;
   overflow: hidden;
-  background: #101418;
+  background: linear-gradient(180deg, #101418 0%, #121922 45%, #0b0f14 100%);
   color: #f8f9fa;
 }
 
@@ -20,7 +20,8 @@
   right: -8rem;
   border: 1px solid rgba(255, 193, 7, 0.14);
   border-radius: 50%;
-  box-shadow: 0 0 0 3rem rgba(255, 193, 7, 0.025),
+  box-shadow:
+    0 0 0 3rem rgba(255, 193, 7, 0.025),
     0 0 0 6rem rgba(255, 193, 7, 0.018);
 }
 
@@ -36,10 +37,43 @@
 .section .container {
   position: relative;
   z-index: 1;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.home-hero {
+  padding: 1rem 0 1.25rem;
+  text-align: left;
+}
+
+.home-kicker {
+  margin: 0 0 0.5rem;
+  color: #f4c95d;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.home-title {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.home-description {
+  margin: 0.75rem 0 0;
+  max-width: 38rem;
+  color: #d0d7df;
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
 .section .row {
   row-gap: 1.5rem !important;
+  margin-top: 0;
 }
 
 .section .movie-card {
@@ -50,5 +84,14 @@
   .section .container {
     padding-right: 1rem;
     padding-left: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .home-hero {
+    padding-top: 0.25rem;
+  }
+
+  .home-description {
+    font-size: 0.92rem;
   }
 }
